@@ -6,18 +6,76 @@
 <title>Da Silva Telma — Ménage & Conciergerie</title>
 <style>
 html,body{margin:0;padding:0;background:#fff}
-body{overflow-x:hidden}
+body{overflow-x:hidden;font-family:Arial,sans-serif}
 .site{position:relative;width:100%;max-width:1024px;margin:0 auto}
 .site img{display:block;width:100%;height:auto}
-.site a{position:absolute;display:block;z-index:2}
-.site a:focus{outline:3px solid #19a99a}
-.home{left:0;top:0;width:100%;height:100%}
+.link{position:absolute;display:block;z-index:5;background:transparent;border:0;text-decoration:none}
+.link:focus{outline:3px solid #19a99a;outline-offset:2px}
+.nav-home{left:0;top:0;width:22%;height:13%}
+.nav-about{left:36%;top:0;width:12%;height:13%}
+.nav-services{left:48%;top:0;width:13%;height:13%}
+.nav-prices{left:61%;top:0;width:12%;height:13%}
+.nav-contact{left:73%;top:0;width:14%;height:13%}
+.cta-quote{left:68%;top:15%;width:30%;height:12%}
+.phone{left:2%;top:15%;width:28%;height:12%}
+.email{left:2%;top:28%;width:28%;height:10%}
+.about-panel,.services-panel,.prices-panel,.contact-panel{
+ position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;
+ background:rgba(0,0,0,.55);padding:20px;box-sizing:border-box
+}
+.panel{background:#fff;max-width:600px;width:100%;border-radius:18px;padding:28px;box-sizing:border-box;box-shadow:0 15px 50px rgba(0,0,0,.3);position:relative}
+.panel h2{margin-top:0}.close{position:absolute;right:16px;top:12px;font-size:28px;text-decoration:none;color:#333}
+.panel a.action{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:8px;background:#19a99a;color:#fff;text-decoration:none}
+:target{display:flex}
 </style>
 </head>
 <body>
 <div class="site">
   <img src="file_00000000669c82439fd180fad3c8a981.png" alt="Da Silva Telma — Ménage & Conciergerie">
-  <a class="home" href="mailto:telmasrt@hotmail.com?subject=Demande%20de%20devis" aria-label="Contacter Da Silva Telma"></a>
+
+  <a class="link nav-home" href="#" aria-label="Accueil"></a>
+  <a class="link nav-about" href="#a-propos" aria-label="À propos"></a>
+  <a class="link nav-services" href="#services" aria-label="Services"></a>
+  <a class="link nav-prices" href="#tarifs" aria-label="Tarifs"></a>
+  <a class="link nav-contact" href="#contact" aria-label="Contact"></a>
+
+  <a class="link cta-quote" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20devis" aria-label="Demander un devis"></a>
+  <a class="link phone" href="tel:+33641944171" aria-label="Appeler Da Silva Telma"></a>
+  <a class="link email" href="mailto:Telmasrt@hotmail.com" aria-label="Envoyer un e-mail"></a>
 </div>
+
+<section id="a-propos" class="about-panel" aria-label="À propos">
+  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
+    <h2>À propos</h2>
+    <p><strong>Da Silva Telma</strong> — Nettoyage courant du bâtiment et Conciergerie.</p>
+    <p>Intervention à Auch et alentours pour particuliers et professionnels.</p>
+  </div>
+</section>
+
+<section id="services" class="services-panel" aria-label="Services">
+  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
+    <h2>Nos services</h2>
+    <p>Nettoyage courant, remise en état, logements, bureaux, parties communes et conciergerie.</p>
+    <a class="action" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20devis">Demander un devis</a>
+  </div>
+</section>
+
+<section id="tarifs" class="prices-panel" aria-label="Tarifs">
+  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
+    <h2>Tarifs</h2>
+    <p>Tarifs adaptés selon le logement, la surface, la fréquence et les prestations demandées.</p>
+    <p>Déplacement inclus dans le secteur prévu.</p>
+    <a class="action" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20tarif">Demander un tarif</a>
+  </div>
+</section>
+
+<section id="contact" class="contact-panel" aria-label="Contact">
+  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
+    <h2>Contact</h2>
+    <p><strong>Téléphone :</strong> <a href="tel:+33641944171">06 41 94 41 71</a></p>
+    <p><strong>E-mail :</strong> <a href="mailto:Telmasrt@hotmail.com">Telmasrt@hotmail.com</a></p>
+    <p>Auch et alentours</p>
+  </div>
+</section>
 </body>
 </html>
