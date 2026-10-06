@@ -6,25 +6,31 @@
 <title>Da Silva Telma — Ménage & Conciergerie</title>
 <style>
 html,body{margin:0;padding:0;background:#fff}
-body{overflow-x:hidden;font-family:Arial,sans-serif}
+body{overflow-x:hidden}
 .site{position:relative;width:100%;max-width:1024px;margin:0 auto}
 .site img{display:block;width:100%;height:auto}
 .link{position:absolute;display:block;z-index:5;background:transparent;border:0;text-decoration:none}
 .link:focus{outline:3px solid #19a99a;outline-offset:2px}
+
+/* Zones transparentes : elles suivent automatiquement la taille de la maquette */
 .nav-home{left:0;top:0;width:22%;height:13%}
 .nav-about{left:36%;top:0;width:12%;height:13%}
 .nav-services{left:48%;top:0;width:13%;height:13%}
 .nav-prices{left:61%;top:0;width:12%;height:13%}
 .nav-contact{left:73%;top:0;width:14%;height:13%}
-.cta-quote{left:68%;top:15%;width:30%;height:12%}
-.phone{left:2%;top:15%;width:28%;height:12%}
-.email{left:2%;top:28%;width:28%;height:10%}
+.cta-quote{left:68%;top:29%;width:30%;height:7%}
+
+/* Téléphone et e-mail : zones responsives dans le bloc Contact */
+.phone{left:62%;top:84%;width:31%;height:5%}
+.email{left:62%;top:89%;width:33%;height:5%}
+
 .about-panel,.services-panel,.prices-panel,.contact-panel{
  position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;
  background:rgba(0,0,0,.55);padding:20px;box-sizing:border-box
 }
 .panel{background:#fff;max-width:600px;width:100%;border-radius:18px;padding:28px;box-sizing:border-box;box-shadow:0 15px 50px rgba(0,0,0,.3);position:relative}
-.panel h2{margin-top:0}.close{position:absolute;right:16px;top:12px;font-size:28px;text-decoration:none;color:#333}
+.panel h2{margin-top:0}
+.close{position:absolute;right:16px;top:12px;font-size:28px;text-decoration:none;color:#333}
 .panel a.action{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:8px;background:#19a99a;color:#fff;text-decoration:none}
 :target{display:flex}
 </style>
@@ -81,9 +87,7 @@ body{overflow-x:hidden;font-family:Arial,sans-serif}
 <script>
 document.querySelectorAll('.about-panel,.services-panel,.prices-panel,.contact-panel').forEach(function(panel){
   panel.addEventListener('click',function(event){
-    if(event.target === panel){
-      window.location.hash = '';
-    }
+    if(event.target === panel) window.location.hash = '';
   });
 });
 </script>
