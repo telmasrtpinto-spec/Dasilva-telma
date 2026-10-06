@@ -1,58 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Da Silva Telma — Nettoyage & Conciergerie à Auch</title>
-<meta name="description" content="Da Silva Telma — Nettoyage courant des bâtiments et conciergerie à Auch et alentours. Particuliers, professionnels et propriétaires.">
-<meta name="theme-color" content="#4b287e">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Da Silva Telma – Nettoyage courant des bâtiments et conciergerie à Auch et alentours.">
+<title>Da Silva Telma | Nettoyage & Conciergerie à Auch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--purple:#4b287e;--purple2:#6d4a9e;--teal:#16a99a;--green:#58b96d;--ink:#252039;--soft:#f7f5f8;--line:#e7e3ea}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5;background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;gap:26px}.brand{display:flex;align-items:center;gap:11px;margin-right:auto}.brand svg{width:58px;height:58px;flex:none}.brand-name{font:italic 25px Georgia,serif;color:var(--purple);display:block}.brand-sub{font-size:10px;letter-spacing:1.4px;color:#555;display:block;font-weight:700;margin-top:-2px}
-nav{display:flex;gap:24px;font-size:13px;font-weight:700}nav a:hover{color:var(--purple)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1.8px solid var(--purple);border-radius:999px;padding:13px 22px;font-weight:700;white-space:nowrap}.primary{background:var(--purple);color:#fff}.outline{background:#fff;color:var(--purple)}
-.hero{padding:48px 0 18px;background:#fff}.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:center}.eyebrow{font-size:13px;letter-spacing:2px;font-weight:800;color:#2c2940}.hero h1{font:italic clamp(48px,6vw,74px)/.96 Georgia,serif;color:var(--purple);margin:10px 0 12px}.hero h2{font-size:23px;margin:0 0 12px}.hero p{font-size:16px;max-width:550px;color:#403a48}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero-photo{height:390px;border-radius:4px 4px 0 80px;overflow:hidden;position:relative;background:linear-gradient(135deg,#eee,#fff)}.hero-photo img{width:100%;height:100%;object-fit:cover}.slogan{position:absolute;right:24px;bottom:18px;color:var(--purple);font:italic 20px Georgia,serif;text-align:center;text-shadow:0 1px 1px #fff}
-section{padding:58px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 30px}.section-k{font-size:12px;letter-spacing:2px;font-weight:800;color:#3f3a4a}.section-head h2{font:italic 38px Georgia,serif;color:var(--purple);margin:4px 0 8px}.section-head p{margin:0;color:#555}
-.services{background:#fff}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.service-card{border:1px solid var(--line);background:#fbfafc;display:grid;grid-template-columns:1fr .82fr;min-height:285px;overflow:hidden}.service-text{padding:25px 25px 20px}.service-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--purple);color:#fff;font-size:24px}.service-card h3{font:italic 27px Georgia,serif;color:var(--purple);margin:13px 0 7px}.service-card p{font-size:13px;margin:0 0 12px;color:#555}.service-card ul{list-style:none;padding:0;margin:0;font-size:12px}.service-card li{margin:7px 0}.service-card li:before{content:"✓";color:var(--teal);font-weight:900;margin-right:8px}.service-photo{min-height:100%;background:#eee}.service-photo img{width:100%;height:100%;object-fit:cover}
-.engagement{background:#faf9fb}.eng-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:42px;align-items:center}.eng-photo{height:285px;overflow:hidden}.eng-photo img{width:100%;height:100%;object-fit:cover;border-radius:0 60px 0 0}.eng-copy h2{font:italic 40px Georgia,serif;color:var(--purple);margin:5px 0}.values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}.value{text-align:center}.value .circle{width:58px;height:58px;border:1.5px solid #888;border-radius:50%;display:grid;place-items:center;margin:auto;color:var(--purple);font-size:24px}.value b{display:block;font-size:12px;margin-top:8px}
-.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}.contact-photo{height:270px;overflow:hidden}.contact-photo img{width:100%;height:100%;object-fit:cover}.contact-copy{padding:15px}.contact-copy h2{font:italic 39px Georgia,serif;color:var(--purple);margin:5px 0 10px}.contact-card{border-left:3px solid var(--purple);padding-left:24px}.contact-row{margin:12px 0;font-weight:700}.contact-row span{color:var(--purple);font-size:20px;margin-right:9px}.bottom-cta{background:linear-gradient(90deg,rgba(67,42,111,.96),rgba(91,68,139,.82)),url('https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=1800&q=80') center/cover;color:#fff;padding:35px 0}.cta-grid{display:flex;align-items:center;justify-content:space-between;gap:20px}.bottom-cta h2{font:italic 30px Georgia,serif;margin:0 0 4px}.bottom-cta p{margin:0}.cta-actions{display:flex;gap:12px;flex-wrap:wrap}.bottom-cta .btn{border-color:#fff;background:#fff;color:var(--purple)}
-footer{background:#211633;color:#fff;padding:25px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot-name{font:italic 20px Georgia,serif}.foot small{color:#cfc7da}
-@media(max-width:850px){nav{display:none}.nav{min-height:72px}.hero{padding-top:35px}.hero-grid,.service-grid,.eng-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{height:300px;border-radius:4px 4px 0 55px}.service-card{grid-template-columns:1fr}.service-photo{height:190px}.eng-photo{height:230px}.values{grid-template-columns:repeat(2,1fr)}.cta-grid,.foot{flex-direction:column;align-items:flex-start}}
-@media(max-width:520px){.brand-name{font-size:20px}.brand svg{width:50px;height:50px}.hero h1{font-size:47px}.hero h2{font-size:20px}.actions .btn{width:100%}.values{gap:10px}.contact-copy h2{font-size:34px}}
+:root{--purple:#4b2a7b;--purple2:#5a338d;--ink:#30263b;--muted:#716978;--pale:#f7f3fa;--teal:#21aaa0;--green:#70b866;--line:#e8e0ed;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Montserrat,Arial,sans-serif;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+.container{width:min(1160px,calc(100% - 48px));margin:auto}
+header{height:88px;background:#fff;border-bottom:1px solid #eee8f1;position:sticky;top:0;z-index:50}
+.navbar{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:13px;min-width:250px}
+.brand-mark{width:51px;height:51px;border:2px solid var(--purple);border-radius:50%;display:grid;place-items:center;color:var(--purple);font-family:"Cormorant Garamond",serif;font-size:26px;font-style:italic;font-weight:700;position:relative}
+.brand-mark:after{content:"";position:absolute;width:26px;height:2px;background:var(--teal);bottom:7px;left:11px}
+.brand-name{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:700;color:var(--purple);line-height:.9}
+.brand-sub{font-size:9px;letter-spacing:2.2px;color:#4f4a54;margin-top:5px;font-weight:600}
+nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:600;color:#504856}
+nav a:hover{color:var(--purple)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:5px;padding:13px 21px;font-size:12px;font-weight:700;letter-spacing:.1px;transition:.2s}
+.btn-purple{background:var(--purple);color:#fff;box-shadow:0 8px 18px rgba(75,42,123,.16)}
+.btn-purple:hover{background:#3d2168;transform:translateY(-1px)}
+.btn-outline{border:1px solid rgba(255,255,255,.7);color:#fff;background:transparent}
+.btn-white{background:#fff;color:var(--purple);border:1px solid #ddd3e4}
+.hero{background:linear-gradient(110deg,#fbf9fc 0%,#f7f1fa 56%,#eee5f5 100%);padding:78px 0 74px}
+.hero-grid{display:grid;grid-template-columns:45% 55%;align-items:center;gap:42px}
+.kicker{font-size:12px;letter-spacing:3px;color:var(--purple);font-weight:700;margin-bottom:8px}
+h1{margin:0;color:var(--purple);font-family:"Cormorant Garamond",Georgia,serif;font-size:60px;line-height:.95;font-weight:600;font-style:italic}
+.hero h2{font-size:22px;font-weight:500;color:#3e3547;margin:13px 0 19px}
+.hero strong{font-size:15px;display:block;margin-bottom:13px}
+.hero p{font-size:13px;color:#6b6470;max-width:500px;margin:0 0 25px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{height:500px;border-radius:4px;overflow:hidden;position:relative;box-shadow:0 20px 50px rgba(61,38,76,.15)}
+.hero-photo img{height:100%;object-position:center}
+.photo-caption{position:absolute;right:26px;bottom:25px;background:rgba(255,255,255,.94);padding:18px 22px;color:var(--purple);font-family:"Cormorant Garamond",serif;font-size:25px;font-style:italic;line-height:1.05;max-width:255px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.section{padding:82px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.eyebrow{color:var(--purple);font-size:11px;font-weight:700;letter-spacing:3px}
+.section h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:42px;line-height:1.05;margin:7px 0 12px;color:var(--purple);font-style:italic}
+.section-head p{color:#766d7a;font-size:13px;margin:0}
+.services{background:#fff}
+.service-list{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.service{border:1px solid var(--line);background:#fff;display:grid;grid-template-columns:1fr 42%;min-height:300px;overflow:hidden;box-shadow:0 8px 25px rgba(57,37,70,.05)}
+.service-copy{padding:32px 28px}
+.service-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#f0eaf6;color:var(--purple);font-size:22px;margin-bottom:16px}
+.service h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--purple);font-size:27px;line-height:1.05;margin:0 0 12px}
+.service p{font-size:12px;color:#716977;margin:0 0 14px}
+.check{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.check li{font-size:11px;color:#514a57}
+.check li:before{content:"✓";color:var(--teal);font-weight:700;margin-right:8px}
+.service-photo{min-height:300px}
+.engagement{background:var(--pale)}
+.engagement-grid{display:grid;grid-template-columns:48% 52%;gap:60px;align-items:center}
+.engagement-photo{height:460px;overflow:hidden;border-radius:4px}
+.engagement-photo img{height:100%}
+.engagement-copy h2{text-align:left}
+.engagement-copy>p{font-size:13px;color:#706876;max-width:500px}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:24px 18px;margin-top:28px}
+.value{display:flex;align-items:center;gap:13px}
+.value-circle{width:57px;height:57px;border:1px solid #cdbfda;border-radius:50%;display:grid;place-items:center;color:var(--purple);font-size:20px;flex:none;background:#fff}
+.value b{font-size:12px;color:#44394d;display:block}
+.value span{font-size:10px;color:#817883}
+.contact{padding:78px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.contact-photo{height:390px;overflow:hidden;border-radius:4px}
+.contact-copy .eyebrow{text-align:left}
+.contact-copy h2{text-align:left;font-size:46px}
+.contact-copy p{font-size:13px;color:#716a76;max-width:480px}
+.contact-item{display:flex;gap:13px;align-items:center;margin-top:18px}
+.contact-item .ci{width:42px;height:42px;border-radius:50%;background:#f1ebf6;color:var(--purple);display:grid;place-items:center;font-size:18px}
+.contact-item b{font-size:12px;display:block;color:#44394d}
+.contact-item span{font-size:11px;color:#766e79}
+.banner{min-height:315px;background:linear-gradient(90deg,rgba(55,32,93,.86),rgba(65,87,135,.55)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;text-align:center;color:#fff}
+.banner h2{font-family:"Cormorant Garamond",serif;font-size:45px;font-style:italic;line-height:1;margin:0 0 14px}
+.banner p{font-size:13px;margin:0 0 22px;opacity:.92}
+.banner-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{background:#281b39;color:#fff;padding:45px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}
+footer .brand-name{color:#fff}
+footer .brand-sub{color:#ddd4e4}
+footer h4{font-size:12px;margin:4px 0 13px}
+footer a,footer p{font-size:11px;color:#d2c9da;display:block;margin:6px 0}
+.copy{border-top:1px solid rgba(255,255,255,.13);margin-top:28px;padding-top:18px;text-align:center;font-size:9px;color:#aaa0b3}
+@media(max-width:900px){
+ nav{display:none}.hero-grid,.engagement-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{height:380px}.service-list{grid-template-columns:1fr}.service{grid-template-columns:1fr 38%}.engagement-photo,.contact-photo{height:330px}.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .container{width:min(100% - 30px,1160px)}header,.navbar{height:75px}.brand{min-width:0}.brand-mark{width:43px;height:43px}.brand-name{font-size:21px}.brand-sub{font-size:7px}
+ .navbar>.btn{padding:10px 12px;font-size:10px}.hero{padding:52px 0}.hero-grid{gap:30px}h1{font-size:47px}.hero h2{font-size:19px}.hero-photo{height:320px}.photo-caption{font-size:20px;right:12px;bottom:12px;padding:12px 15px}
+ .section{padding:62px 0}.section h2,.contact-copy h2{font-size:37px}.service{grid-template-columns:1fr}.service-photo{height:220px;order:-1}.values{gap:18px 8px}.value-circle{width:48px;height:48px}.banner h2{font-size:37px}.footer-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#accueil">
-<svg viewBox="0 0 100 100" aria-label="Logo Da Silva Telma"><circle cx="50" cy="52" r="36" fill="none" stroke="#4b287e" stroke-width="6"/><path d="M17 48c10-22 31-31 54-27M22 68c15 17 40 20 59 5" fill="none" stroke="#16a99a" stroke-width="5" stroke-linecap="round"/><circle cx="43" cy="42" r="7" fill="#4b287e"/><path d="M34 58c4-11 18-11 22 0l-5 13H39z" fill="#4b287e"/><circle cx="65" cy="60" r="5" fill="#58b96d"/><circle cx="73" cy="49" r="3" fill="#16a99a"/></svg>
-<div><span class="brand-name">Da Silva Telma</span><span class="brand-sub">MÉNAGE & CONCIERGERIE</span></div></a>
-<nav><a href="#accueil">Accueil</a><a href="#services">Nos services</a><a href="#engagements">À propos</a><a href="#avis">Avis</a><a href="#contact">Contact</a></nav>
-<a class="btn primary" href="#contact">▣ &nbsp;Demander un devis</a>
-</div></header>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="#accueil" aria-label="Da Silva Telma">
+      <span class="brand-mark">D</span>
+      <span><span class="brand-name">Da Silva Telma</span><span class="brand-sub">MÉNAGE &amp; CONCIERGERIE</span></span>
+    </a>
+    <nav>
+      <a href="#accueil">Accueil</a><a href="#services">Nos services</a><a href="#apropos">À propos</a><a href="#avis">Avis</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-purple" href="#contact">Demander un devis</a>
+  </div>
+</header>
 
-<main id="accueil">
-<section class="hero"><div class="wrap hero-grid"><div>
-<div class="eyebrow">DA SILVA TELMA</div><h1>Nettoyage &<br>Conciergerie</h1><h2>à Auch et alentours</h2>
-<p><b>Un service sérieux, soigné et adapté à vos besoins.</b><br>Da Silva Telma vous accompagne pour l’entretien de vos logements, locaux et espaces professionnels, ainsi que pour vos besoins en conciergerie.</p>
-<div class="actions"><a class="btn primary" href="tel:0641944171">☎ &nbsp;Appeler maintenant<br>06 41 94 41 71</a><a class="btn outline" href="mailto:telmasrt@hotmail.com?subject=Demande%20de%20devis">▤ &nbsp;Demander un devis<br>(rapide et gratuit)</a></div>
-</div>
-<div class="hero-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85" alt="Produits et matériel de nettoyage dans un intérieur"><div class="slogan">Des espaces propres,<br>une tranquillité d’esprit !</div></div>
-</div></section>
+<main>
+<section class="hero" id="accueil">
+ <div class="container hero-grid">
+  <div>
+   <div class="kicker">DA SILVA TELMA</div>
+   <h1>Nettoyage &amp;<br>Conciergerie</h1>
+   <h2>à Auch et alentours</h2>
+   <strong>Un service sérieux, soigné et adapté à vos besoins.</strong>
+   <p>Pour particuliers et professionnels, je vous accompagne avec des prestations de nettoyage et de conciergerie réalisées avec soin, ponctualité et discrétion.</p>
+   <div class="hero-actions">
+    <a class="btn btn-purple" href="tel:0641944171">Appeler maintenant&nbsp; 06 41 94 41 71</a>
+    <a class="btn btn-white" href="#contact">Demander un devis (rapide et gratuit)</a>
+   </div>
+  </div>
+  <div class="hero-photo">
+   <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85" alt="Nettoyage et entretien">
+   <div class="photo-caption">Des espaces propres,<br>une tranquillité d’esprit !</div>
+  </div>
+ </div>
+</section>
 
-<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="section-k">NOS SERVICES</div><h2>Des prestations sur mesure</h2><p>Que vous soyez un particulier, une entreprise ou un propriétaire, nous vous proposons des solutions adaptées à vos besoins.</p></div>
-<div class="service-grid">
-<article class="service-card"><div class="service-text"><div class="service-icon">✦</div><h3>Nettoyage courant des bâtiments</h3><p>Nous assurons l’entretien régulier ou ponctuel de vos espaces afin de vous garantir un environnement propre, agréable et soigné.</p><ul><li>Entretien de logements</li><li>Nettoyage de locaux professionnels</li><li>Entretien des parties communes</li><li>Entretien entre locations</li><li>Prestations ponctuelles ou régulières</li></ul></div><div class="service-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Nettoyage professionnel"></div></article>
-<article class="service-card"><div class="service-text"><div class="service-icon">⌕</div><h3>Conciergerie</h3><p>Nous vous proposons également des services de conciergerie pour faciliter la gestion et l’entretien de vos logements.</p><ul><li>Préparation des logements</li><li>Nettoyage entre deux séjours</li><li>Remise en ordre des espaces</li><li>Gestion des entrées et sorties</li><li>Services personnalisés selon vos besoins</li></ul></div><div class="service-photo"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Logement préparé avec linge propre"></div></article>
-</div></div></section>
+<section class="section services" id="services">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">NOS SERVICES</div><h2>Des prestations sur mesure</h2><p>Des solutions adaptées à vos besoins, pour des espaces propres, agréables et prêts à accueillir.</p></div>
+  <div class="service-list">
+   <article class="service">
+    <div class="service-copy">
+     <div class="service-icon">✦</div><h3>Nettoyage courant des bâtiments</h3>
+     <p>Entretien régulier ou ponctuel de logements et locaux professionnels, avec une attention particulière aux finitions.</p>
+     <ul class="check"><li>Nettoyage des logements et locaux</li><li>Parties communes, halls et cages d’escalier</li><li>Remise en état et grand nettoyage</li><li>Nettoyage entre deux locations</li></ul>
+    </div>
+    <div class="service-photo"><img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=85" alt="Nettoyage professionnel"></div>
+   </article>
+   <article class="service">
+    <div class="service-copy">
+     <div class="service-icon">⌂</div><h3>Conciergerie</h3>
+     <p>Un service pratique pour les propriétaires et locations courte durée, avec une gestion soignée de chaque séjour.</p>
+     <ul class="check"><li>Préparation des logements</li><li>Nettoyage entre deux séjours</li><li>Entrées et sorties</li><li>Remise en ordre et services personnalisés</li></ul>
+    </div>
+    <div class="service-photo"><img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=900&q=85" alt="Logement prêt à accueillir"></div>
+   </article>
+  </div>
+ </div>
+</section>
 
-<section class="engagement" id="engagements"><div class="wrap eng-grid"><div class="eng-photo"><img src="https://images.unsplash.com/photo-1583845112203-454c5b4f9c06?auto=format&fit=crop&w=900&q=80" alt="Intérieur propre et soigné"></div>
-<div class="eng-copy"><div class="section-k">POURQUOI NOUS CHOISIR ?</div><h2>Nos engagements</h2><p>Nous accordons une attention particulière à chaque prestation afin de vous garantir un résultat propre et soigné.</p>
-<div class="values"><div class="value"><div class="circle">☆</div><b>Sérieux</b></div><div class="value"><div class="circle">◷</div><b>Ponctualité</b></div><div class="value"><div class="circle">✧</div><b>Soin</b></div><div class="value"><div class="circle">♙</div><b>Disponibilité</b></div></div></div></div></section>
+<section class="section engagement" id="apropos">
+ <div class="container engagement-grid">
+  <div class="engagement-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=85" alt="Service de nettoyage soigné"></div>
+  <div class="engagement-copy">
+   <div class="eyebrow">POURQUOI NOUS CHOISIR ?</div><h2>Nos engagements</h2>
+   <p>Parce que la qualité d’un service passe aussi par la confiance, chaque prestation est réalisée avec sérieux et dans le respect de votre logement ou de vos locaux.</p>
+   <div class="values">
+    <div class="value"><div class="value-circle">✓</div><div><b>Sérieux</b><span>Un travail appliqué</span></div></div>
+    <div class="value"><div class="value-circle">◷</div><div><b>Ponctualité</b><span>Des horaires respectés</span></div></div>
+    <div class="value"><div class="value-circle">♡</div><div><b>Soin</b><span>Des finitions soignées</span></div></div>
+    <div class="value"><div class="value-circle">☏</div><div><b>Disponibilité</b><span>À votre écoute</span></div></div>
+   </div>
+  </div>
+ </div>
+</section>
 
-<section id="contact"><div class="wrap contact-grid"><div class="contact-photo"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=80" alt="Intérieur accueillant"></div><div class="contact-copy"><div class="section-k">AUCH ET ALENTOURS</div><h2>Votre satisfaction est notre priorité !</h2><p>Vous avez besoin d’un service de nettoyage ou de conciergerie ? Contactez Da Silva Telma pour demander votre devis.</p><div class="contact-card"><div class="contact-row"><span>☎</span><a href="tel:0641944171">06 41 94 41 71</a></div><div class="contact-row"><span>✉</span><a href="mailto:telmasrt@hotmail.com">telmasrt@hotmail.com</a></div></div></div></div></section>
+<section class="contact" id="contact">
+ <div class="container contact-grid">
+  <div class="contact-photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Intérieur propre et accueillant"></div>
+  <div class="contact-copy">
+   <div class="eyebrow">CONTACT</div><h2>Auch et alentours</h2>
+   <p>Vous avez besoin d’un service de nettoyage ou de conciergerie ? Contactez Da Silva Telma pour demander votre devis.</p>
+   <div class="contact-item"><div class="ci">☎</div><div><b>Téléphone</b><span>06 41 94 41 71</span></div></div>
+   <div class="contact-item"><div class="ci">✉</div><div><b>E-mail</b><span>telmasrt@hotmail.com</span></div></div>
+   <div style="margin-top:25px"><a class="btn btn-purple" href="mailto:telmasrt@hotmail.com?subject=Demande%20de%20devis">Demander mon devis</a></div>
+  </div>
+ </div>
+</section>
 
-<section class="bottom-cta"><div class="wrap cta-grid"><div><h2>Un projet ? Une question ?</h2><p>Demandez votre devis dès maintenant !<br>Nous vous répondons rapidement et gratuitement.</p></div><div class="cta-actions"><a class="btn" href="tel:0641944171">☎ Appeler<br>06 41 94 41 71</a><a class="btn" href="mailto:telmasrt@hotmail.com">✉ Envoyer un e-mail<br>Telmasrt@hotmail.com</a></div></div></section>
+<section class="banner" id="avis">
+ <div class="container">
+  <h2>Un projet ? Une question ?</h2>
+  <p>Demandez votre devis dès maintenant !</p>
+  <div class="banner-actions">
+   <a class="btn btn-white" href="tel:0641944171">06 41 94 41 71</a>
+   <a class="btn btn-outline" href="mailto:telmasrt@hotmail.com">telmasrt@hotmail.com</a>
+  </div>
+ </div>
+</section>
 </main>
 
-<footer><div class="wrap foot"><div><div class="foot-name">Da Silva Telma</div><small>Ménage & Conciergerie</small></div><small>© 2026 Da Silva Telma — Auch et alentours</small></div></footer>
-</body></html>
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><div class="brand"><span class="brand-mark" style="background:#fff">D</span><span><span class="brand-name">Da Silva Telma</span><span class="brand-sub">MÉNAGE &amp; CONCIERGERIE</span></span></div><p style="margin-top:18px">Un service sérieux, soigné et adapté à vos besoins.</p></div>
+   <div><h4>MENU</h4><a href="#accueil">Accueil</a><a href="#services">Nos services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></div>
+   <div><h4>CONTACT</h4><p>Auch et alentours</p><a href="tel:0641944171">06 41 94 41 71</a><a href="mailto:telmasrt@hotmail.com">telmasrt@hotmail.com</a></div>
+  </div>
+  <div class="copy">© 2026 Da Silva Telma – Ménage &amp; Conciergerie. Tous droits réservés.</div>
+ </div>
+</footer>
+</body>
+</html>
