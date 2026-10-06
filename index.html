@@ -3,158 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Da Silva Telma — Nettoyage & Conciergerie à Auch</title>
-<meta name="description" content="Da Silva Telma — nettoyage courant des bâtiments, ménage à domicile, grand nettoyage, ménage pour les aînés, professionnels et conciergerie à Auch et alentours.">
+<title>Da Silva Telma — Ménage & Conciergerie</title>
 <style>
-:root{
-  --purple:#4b287e; --purple2:#6a43a0; --teal:#19a99a; --green:#56b56d;
-  --ink:#24183b; --soft:#f7f5fb; --white:#fff; --muted:#665e73;
-  --shadow:0 18px 45px rgba(57,34,93,.12); --radius:24px;
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #eee}
-.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{width:58px;height:58px;object-fit:cover;border-radius:50%}
-.brand strong{font-family:Georgia,serif;font-size:25px;color:var(--purple);font-style:italic}
-.brand span{display:block;font-size:11px;letter-spacing:1.4px;color:#555}
-nav{display:flex;gap:24px;align-items:center;font-size:14px}
-nav a:hover{color:var(--purple)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border-radius:999px;font-weight:700;border:2px solid var(--purple);transition:.2s}
-.btn.primary{background:var(--purple);color:#fff}.btn.primary:hover{background:var(--purple2);transform:translateY(-1px)}
-.btn.light{background:#fff;color:var(--purple)} .btn.light:hover{background:#f6f1fb}
-.hero{background:linear-gradient(110deg,#fff 0%,#faf7fd 48%,#efe9f7 100%);padding:74px 0 70px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:50px}
-.kicker{color:var(--purple);font-weight:800;letter-spacing:2px;font-size:14px}
-h1{font-family:Georgia,serif;font-size:clamp(44px,6vw,72px);line-height:1.03;margin:12px 0;color:var(--purple);font-style:italic}
-.hero h2{font-size:22px;margin:0 0 14px}.hero p{font-size:17px;color:#4f475d;max-width:600px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.hero-card{min-height:420px;border-radius:32px;background:
-linear-gradient(180deg,rgba(75,40,126,.08),rgba(25,169,154,.10)),
-url('logo-da-silva-telma.jpg') center/contain no-repeat,#fff;
-box-shadow:var(--shadow);position:relative;border:1px solid #ece6f4}
-.hero-badge{position:absolute;right:22px;bottom:22px;background:#fff;padding:14px 18px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.1);font-weight:700;color:var(--purple)}
-section{padding:82px 0}.section-head{text-align:center;max-width:750px;margin:0 auto 40px}
-.section-head .kicker{font-size:13px}.section-head h2{font-family:Georgia,serif;font-size:42px;color:var(--purple);font-style:italic;margin:8px 0}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.card{padding:32px;border-radius:var(--radius);background:var(--soft);box-shadow:var(--shadow);border:1px solid #ece7f3}
-.icon{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--purple);color:white;font-size:25px}
-.card h3{font-family:Georgia,serif;color:var(--purple);font-size:27px;font-style:italic;margin:18px 0 8px}
-.card ul{padding:0;margin:20px 0 0;list-style:none}.card li{margin:10px 0}.card li::before{content:"✓";color:var(--teal);font-weight:900;margin-right:10px}
-.trust{background:#faf9fc}.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.trust-img{min-height:360px;border-radius:28px;background:linear-gradient(135deg,#eee8f7,#e9f8f4);display:grid;place-items:center;overflow:hidden}
-.trust-img img{width:65%;max-width:330px;border-radius:22px;box-shadow:var(--shadow)}
-.values{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:25px}
-.value{padding:20px;background:#fff;border-radius:18px;border:1px solid #eee;box-shadow:0 8px 24px rgba(50,30,80,.06)}
-.value b{display:block;color:var(--purple);font-size:17px}.value small{color:var(--muted)}
-.contact{background:linear-gradient(135deg,var(--purple),#36205f);color:#fff}
-.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
-.contact h2{font-family:Georgia,serif;font-size:44px;font-style:italic;margin:8px 0}
-.contact p{color:#eee;max-width:650px}
-.contact-box{background:#fff;color:var(--ink);padding:28px;border-radius:24px}
-.contact-row{display:flex;gap:12px;align-items:center;margin:14px 0;font-weight:700}
-.contact-row span:first-child{font-size:24px;color:var(--purple)}
-footer{background:#211633;color:#fff;padding:30px 0}
-.footer{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
-footer small{color:#c9c1d4}
-.mobile-call{display:none}
-@media(max-width:800px){
- nav{display:none}.mobile-call{display:inline-flex}
- .hero{padding:52px 0}.hero-grid,.trust-grid,.contact-grid{grid-template-columns:1fr}
- .hero-card{min-height:300px}.cards{grid-template-columns:1fr}.values{grid-template-columns:1fr}
- .section-head h2,.contact h2{font-size:34px}.brand strong{font-size:20px}
-}
+html,body{margin:0;padding:0;background:#fff}
+body{overflow-x:hidden}
+.site{position:relative;width:100%;max-width:1024px;margin:0 auto}
+.site img{display:block;width:100%;height:auto}
+.site a{position:absolute;display:block;z-index:2}
+.site a:focus{outline:3px solid #19a99a}
+.home{left:0;top:0;width:100%;height:100%}
 </style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#accueil">
-      <img src="logo-da-silva-telma.jpg" alt="Logo Da Silva Telma">
-      <div><strong>Da Silva Telma</strong><span>MÉNAGE & CONCIERGERIE</span></div>
-    </a>
-    <nav>
-      <a href="#accueil">Accueil</a><a href="#services">Nos services</a><a href="#engagements">Nos engagements</a><a href="#contact">Contact</a>
-    </nav>
-    <a class="btn primary" href="#contact">Demander un devis</a>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="accueil">
- <div class="container hero-grid">
-  <div>
-    <div class="kicker">DA SILVA TELMA</div>
-    <h1>Nettoyage &<br>Conciergerie</h1>
-    <h2>à Auch et alentours</h2>
-    <p><b>Un service sérieux, soigné et adapté à vos besoins.</b><br>
-    Ménage à domicile, grand nettoyage, ménage pour les aînés, professionnels et prestations de conciergerie.</p>
-    <div class="actions">
-      <a class="btn primary" href="tel:0641944171">☎ Appeler · 06 41 94 41 71</a>
-      <a class="btn light" href="mailto:telmasrt@hotmail.com?subject=Demande%20de%20devis">✉ Demander un devis</a>
-    </div>
-  </div>
-  <div class="hero-card" aria-label="Présentation de Da Silva Telma">
-    <div class="hero-badge">Des espaces propres,<br>une tranquillité d'esprit !</div>
-  </div>
- </div>
-</section>
-
-<section id="services">
- <div class="container">
-  <div class="section-head"><div class="kicker">NOS SERVICES</div><h2>Des prestations sur mesure</h2><p>Des solutions adaptées aux particuliers, aux professionnels et aux propriétaires.</p></div>
-  <div class="cards">
-   <article class="card"><div class="icon">✦</div><h3>Nettoyage courant des bâtiments</h3><p>Un entretien régulier ou ponctuel pour garder vos espaces propres, agréables et soignés.</p>
-    <ul><li>Ménage à domicile</li><li>Grand nettoyage</li><li>Ménage pour les aînés</li><li>Nettoyage de locaux professionnels</li><li>Prestations ponctuelles ou régulières</li></ul>
-   </article>
-   <article class="card"><div class="icon">⌕</div><h3>Conciergerie</h3><p>Des services pratiques pour faciliter l’entretien et la gestion de vos logements.</p>
-    <ul><li>Préparation des logements</li><li>Nettoyage entre deux séjours</li><li>Remise en ordre des espaces</li><li>Gestion des entrées et sorties</li><li>Services personnalisés</li></ul>
-   </article>
-  </div>
- </div>
-</section>
-
-<section class="trust" id="engagements">
- <div class="container trust-grid">
-  <div class="trust-img"><img src="logo-da-silva-telma.jpg" alt="Logo Da Silva Telma"></div>
-  <div>
-   <div class="kicker">POURQUOI NOUS CHOISIR ?</div><h2 style="font-family:Georgia,serif;font-style:italic;color:var(--purple);font-size:42px;margin:8px 0">Nos engagements</h2>
-   <p>Chaque prestation est réalisée avec attention pour vous garantir un résultat propre et soigné.</p>
-   <div class="values">
-    <div class="value"><b>★ Sérieux</b><small>Une prestation professionnelle</small></div>
-    <div class="value"><b>◷ Ponctualité</b><small>Des interventions organisées</small></div>
-    <div class="value"><b>✧ Soin</b><small>Le souci du détail</small></div>
-    <div class="value"><b>♙ Disponibilité</b><small>À l’écoute de vos besoins</small></div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="contact" id="contact">
- <div class="container contact-grid">
-  <div>
-   <div class="kicker" style="color:#bff5ec">AUCH ET ALENTOURS</div>
-   <h2>Un projet ? Une question ?</h2>
-   <p>Demandez votre devis. Contactez Da Silva Telma pour échanger sur vos besoins de nettoyage ou de conciergerie.</p>
-   <a class="btn" style="background:#fff;color:var(--purple);border-color:#fff" href="tel:0641944171">☎ Appeler maintenant</a>
-  </div>
-  <div class="contact-box">
-    <div class="contact-row"><span>☎</span><a href="tel:0641944171">06 41 94 41 71</a></div>
-    <div class="contact-row"><span>✉</span><a href="mailto:telmasrt@hotmail.com">telmasrt@hotmail.com</a></div>
-    <div class="contact-row"><span>⌖</span><span>Auch et alentours</span></div>
-  </div>
- </div>
-</section>
-</main>
-
-<footer>
- <div class="container footer">
-  <div><b style="font-family:Georgia,serif;font-style:italic;font-size:20px">Da Silva Telma</b><br><small>Ménage & Conciergerie</small></div>
-  <small>© 2026 Da Silva Telma — Tous droits réservés</small>
- </div>
-</footer>
+<div class="site">
+  <img src="file_00000000669c82439fd180fad3c8a981.png" alt="Da Silva Telma — Ménage & Conciergerie">
+  <a class="home" href="mailto:telmasrt@hotmail.com?subject=Demande%20de%20devis" aria-label="Contacter Da Silva Telma"></a>
+</div>
 </body>
 </html>
