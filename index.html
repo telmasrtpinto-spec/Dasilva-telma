@@ -77,5 +77,15 @@ body{overflow-x:hidden;font-family:Arial,sans-serif}
     <p>Auch et alentours</p>
   </div>
 </section>
+
+<script>
+document.querySelectorAll('.about-panel,.services-panel,.prices-panel,.contact-panel').forEach(function(panel){
+  panel.addEventListener('click',function(event){
+    if(event.target === panel){
+      window.location.hash = '';
+    }
+  });
+});
+</script>
 </body>
 </html>
