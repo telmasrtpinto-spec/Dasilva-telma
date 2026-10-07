@@ -19,14 +19,82 @@ body{overflow-x:hidden;font-family:Arial,sans-serif}
 .cta-quote{left:68%;top:15%;width:30%;height:12%}
 .phone{left:2%;top:15%;width:28%;height:12%}
 .email{left:2%;top:28%;width:28%;height:10%}
+
 .about-panel,.services-panel,.prices-panel,.contact-panel{
  position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;
- background:rgba(0,0,0,.55);padding:20px;box-sizing:border-box
+ background:rgba(0,0,0,.60);padding:24px;box-sizing:border-box;
+ overflow-y:auto;
 }
-.panel{background:#fff;max-width:600px;width:100%;border-radius:18px;padding:28px;box-sizing:border-box;box-shadow:0 15px 50px rgba(0,0,0,.3);position:relative}
-.panel h2{margin-top:0}.close{position:absolute;right:16px;top:12px;font-size:28px;text-decoration:none;color:#333}
-.panel a.action{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:8px;background:#19a99a;color:#fff;text-decoration:none}
+.panel{
+ background:#fff;
+ width:min(900px,96vw);
+ max-height:88vh;
+ overflow-y:auto;
+ border-radius:22px;
+ padding:42px 46px;
+ box-sizing:border-box;
+ box-shadow:0 20px 70px rgba(0,0,0,.38);
+ position:relative;
+ font-size:20px;
+ line-height:1.6;
+}
+.panel h2{
+ margin:0 45px 22px 0;
+ font-size:34px;
+ line-height:1.2;
+}
+.panel p{margin:0 0 18px}
+.close{
+ position:absolute;
+ right:20px;
+ top:14px;
+ width:46px;
+ height:46px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:36px;
+ line-height:1;
+ text-decoration:none;
+ color:#333;
+ border-radius:50%;
+}
+.close:hover,.close:focus{background:#f0f0f0}
+.panel a.action{
+ display:inline-block;
+ margin-top:10px;
+ padding:15px 24px;
+ border-radius:10px;
+ background:#19a99a;
+ color:#fff;
+ text-decoration:none;
+ font-size:19px;
+ font-weight:bold;
+}
 :target{display:flex}
+
+@media (max-width:700px){
+ .about-panel,.services-panel,.prices-panel,.contact-panel{
+   padding:12px;
+   align-items:center;
+ }
+ .panel{
+   width:96vw;
+   max-height:92vh;
+   padding:34px 24px 28px;
+   border-radius:18px;
+   font-size:18px;
+   line-height:1.55;
+ }
+ .panel h2{font-size:29px;margin-bottom:18px}
+ .close{right:10px;top:8px;width:42px;height:42px;font-size:32px}
+ .panel a.action{width:100%;box-sizing:border-box;text-align:center;font-size:18px}
+}
+
+@media (max-width:400px){
+ .panel{padding:32px 18px 22px;font-size:17px}
+ .panel h2{font-size:26px}
+}
 </style>
 </head>
 <body>
