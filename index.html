@@ -6,7 +6,7 @@
 <title>Da Silva Telma — Ménage & Conciergerie</title>
 <style>
 html,body{margin:0;padding:0;background:#fff}
-body{overflow-x:hidden;font-family:Arial,sans-serif}
+body{overflow-x:hidden}
 .site{position:relative;width:100%;max-width:1024px;margin:0 auto}
 .site img{display:block;width:100%;height:auto}
 .link{position:absolute;display:block;z-index:5;background:transparent;border:0;text-decoration:none}
@@ -19,141 +19,21 @@ body{overflow-x:hidden;font-family:Arial,sans-serif}
 .cta-quote{left:68%;top:15%;width:30%;height:12%}
 .phone{left:2%;top:15%;width:28%;height:12%}
 .email{left:2%;top:28%;width:28%;height:10%}
-
-.about-panel,.services-panel,.prices-panel,.contact-panel{
- position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;
- background:rgba(0,0,0,.60);padding:24px;box-sizing:border-box;
- overflow-y:auto;
-}
-.panel{
- background:#fff;
- width:min(900px,96vw);
- max-height:88vh;
- overflow-y:auto;
- border-radius:22px;
- padding:42px 46px;
- box-sizing:border-box;
- box-shadow:0 20px 70px rgba(0,0,0,.38);
- position:relative;
- font-size:20px;
- line-height:1.6;
-}
-.panel h2{
- margin:0 45px 22px 0;
- font-size:34px;
- line-height:1.2;
-}
-.panel p{margin:0 0 18px}
-.close{
- position:absolute;
- right:20px;
- top:14px;
- width:46px;
- height:46px;
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:36px;
- line-height:1;
- text-decoration:none;
- color:#333;
- border-radius:50%;
-}
-.close:hover,.close:focus{background:#f0f0f0}
-.panel a.action{
- display:inline-block;
- margin-top:10px;
- padding:15px 24px;
- border-radius:10px;
- background:#19a99a;
- color:#fff;
- text-decoration:none;
- font-size:19px;
- font-weight:bold;
-}
-:target{display:flex}
-
-@media (max-width:700px){
- .about-panel,.services-panel,.prices-panel,.contact-panel{
-   padding:12px;
-   align-items:center;
- }
- .panel{
-   width:96vw;
-   max-height:92vh;
-   padding:34px 24px 28px;
-   border-radius:18px;
-   font-size:18px;
-   line-height:1.55;
- }
- .panel h2{font-size:29px;margin-bottom:18px}
- .close{right:10px;top:8px;width:42px;height:42px;font-size:32px}
- .panel a.action{width:100%;box-sizing:border-box;text-align:center;font-size:18px}
-}
-
-@media (max-width:400px){
- .panel{padding:32px 18px 22px;font-size:17px}
- .panel h2{font-size:26px}
-}
 </style>
 </head>
 <body>
 <div class="site">
   <img src="file_00000000669c82439fd180fad3c8a981.png" alt="Da Silva Telma — Ménage & Conciergerie">
 
-  <a class="link nav-home" href="#" aria-label="Accueil"></a>
-  <a class="link nav-about" href="#a-propos" aria-label="À propos"></a>
-  <a class="link nav-services" href="#services" aria-label="Services"></a>
-  <a class="link nav-prices" href="#tarifs" aria-label="Tarifs"></a>
-  <a class="link nav-contact" href="#contact" aria-label="Contact"></a>
+  <a class="link nav-home" href="index.html" aria-label="Accueil"></a>
+  <a class="link nav-about" href="infos.html#a-propos" aria-label="À propos"></a>
+  <a class="link nav-services" href="infos.html#services" aria-label="Services"></a>
+  <a class="link nav-prices" href="infos.html#tarifs" aria-label="Tarifs"></a>
+  <a class="link nav-contact" href="infos.html#contact" aria-label="Contact"></a>
 
   <a class="link cta-quote" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20devis" aria-label="Demander un devis"></a>
   <a class="link phone" href="tel:+33641944171" aria-label="Appeler Da Silva Telma"></a>
   <a class="link email" href="mailto:Telmasrt@hotmail.com" aria-label="Envoyer un e-mail"></a>
 </div>
-
-<section id="a-propos" class="about-panel" aria-label="À propos">
-  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
-    <h2>À propos</h2>
-    <p><strong>Da Silva Telma</strong> — Nettoyage courant du bâtiment et Conciergerie.</p>
-    <p>Intervention à Auch et alentours pour particuliers et professionnels.</p>
-  </div>
-</section>
-
-<section id="services" class="services-panel" aria-label="Services">
-  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
-    <h2>Nos services</h2>
-    <p>Nettoyage courant, remise en état, logements, bureaux, parties communes et conciergerie.</p>
-    <a class="action" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20devis">Demander un devis</a>
-  </div>
-</section>
-
-<section id="tarifs" class="prices-panel" aria-label="Tarifs">
-  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
-    <h2>Tarifs</h2>
-    <p>Tarifs adaptés selon le logement, la surface, la fréquence et les prestations demandées.</p>
-    <p>Déplacement inclus dans le secteur prévu.</p>
-    <a class="action" href="mailto:Telmasrt@hotmail.com?subject=Demande%20de%20tarif">Demander un tarif</a>
-  </div>
-</section>
-
-<section id="contact" class="contact-panel" aria-label="Contact">
-  <div class="panel"><a class="close" href="#" aria-label="Fermer">×</a>
-    <h2>Contact</h2>
-    <p><strong>Téléphone :</strong> <a href="tel:+33641944171">06 41 94 41 71</a></p>
-    <p><strong>E-mail :</strong> <a href="mailto:Telmasrt@hotmail.com">Telmasrt@hotmail.com</a></p>
-    <p>Auch et alentours</p>
-  </div>
-</section>
-
-<script>
-document.querySelectorAll('.about-panel,.services-panel,.prices-panel,.contact-panel').forEach(function(panel){
-  panel.addEventListener('click',function(event){
-    if(event.target === panel){
-      window.location.hash = '';
-    }
-  });
-});
-</script>
 </body>
 </html>
